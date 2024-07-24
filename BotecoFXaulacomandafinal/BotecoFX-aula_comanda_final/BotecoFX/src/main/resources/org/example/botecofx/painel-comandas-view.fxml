@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+   <?import javafx.scene.control.Button?>
+   <?import javafx.scene.control.ListView?>
+   <?import javafx.scene.control.TextArea?>
+   <?import javafx.scene.layout.HBox?>
+   <?import javafx.scene.layout.VBox?>
+   <?import javafx.scene.text.Font?>
+
+   <HBox prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.botecofx.PainelComandasController">
+      <children>
+         <ListView fx:id="listView" onMouseClicked="#onClickComanda" prefHeight="600.0" prefWidth="403.0" stylesheets="@estilo.css" />
+         <VBox alignment="CENTER" prefHeight="600.0" prefWidth="194.0" spacing="40.0" style="-fx-background-color: darkgray;" HBox.hgrow="ALWAYS">
+            <children>
+               <HBox alignment="CENTER" prefHeight="56.0" prefWidth="397.0" spacing="15.0">
+                  <children>
+                     <Button fx:id="btNovo" mnemonicParsing="false" onAction="#onNovaComanda" prefHeight="43.0" prefWidth="61.0" style="-fx-background-color: brown;" text="+" textFill="WHITE">
+                        <font>
+                           <Font name="System Bold" size="15.0" />
+                        </font>
+                     </Button>
+                     <Button fx:id="btAlterar" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#onAlterarComanda" prefHeight="43.0" prefWidth="61.0" style="-fx-background-color: brown;" text="..." textFill="WHITE">
+                        <font>
+                           <Font name="System Bold" size="15.0" />
+                        </font>
+                     </Button>
+                     <Button fx:id="btPagar" layoutX="71.0" layoutY="10.0" mnemonicParsing="false" onAction="#onPagarComanda" prefHeight="43.0" prefWidth="61.0" style="-fx-background-color: brown;" text="\$" textFill="WHITE">
+                        <font>
+                           <Font name="System Bold" size="15.0" />
+                        </font>
+                     </Button>
+                  </children>
+               </HBox>
+               <TextArea fx:id="taPreview" editable="false" prefHeight="318.0" prefWidth="397.0">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </TextArea>
+               <Button fx:id="btSair" mnemonicParsing="false" onAction="#onSair" prefHeight="32.0" prefWidth="193.0" text="Sair" />
+            </children>
+         </VBox>
+      </children>
+   </HBox>

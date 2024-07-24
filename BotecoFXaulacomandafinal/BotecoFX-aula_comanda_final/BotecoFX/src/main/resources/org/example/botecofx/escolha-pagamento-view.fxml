@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.botecofx.EscolhaPagamentoController" alignment="CENTER" hgap="10" vgap="10">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    <Label text="Forma de Pagamento:" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="2"/>
+    <RadioButton fx:id="rbPix" text="PIX" GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.columnSpan="2"/>
+    <RadioButton fx:id="rbDinheiro" text="Dinheiro" GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.columnSpan="2"/>
+    <Label fx:id="lbValor" text="Valor:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+    <TextField fx:id="tfValor" editable="false" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+    <Label fx:id="lbChavePix" text="Chave PIX: 1899999-9999" visible="false" GridPane.rowIndex="4" GridPane.columnIndex="0" GridPane.columnSpan="2"/>
+    <Button text="Confirmar" onAction="#onConfirmar" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+    <Button text="Cancelar" onAction="#onCancelar" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+</GridPane>

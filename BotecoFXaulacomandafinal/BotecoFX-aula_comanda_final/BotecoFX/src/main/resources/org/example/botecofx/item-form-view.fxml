@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="BOTTOM_CENTER" prefHeight="553.0" prefWidth="882.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.botecofx.ItemFormController">
+   <children>
+      <VBox prefHeight="466.0" prefWidth="882.0">
+         <children>
+            <Label text="ID DE PRODUTO">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="tfId" editable="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </TextField>
+            <Label prefHeight="20.0" prefWidth="218.0" text="ID DE COMANDA">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tdNome1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="10.0" layoutY="10.0" text="QUANTIDADE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="tdNome" layoutX="10.0" layoutY="30.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </TextField>
+            <HBox spacing="20.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox spacing="20.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="15.0" left="20.0" right="20.0" />
+         </padding>
+      </VBox>
+      <HBox alignment="CENTER" prefHeight="89.0" prefWidth="882.0" spacing="350.0" style="-fx-background-color: gray;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onCancelar" prefHeight="22.0" prefWidth="102.0" style="-fx-background-color: WHITE;" text="CANCELAR">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+            <Button layoutX="406.0" layoutY="40.0" mnemonicParsing="false" onAction="#onConfirmar" prefHeight="22.0" prefWidth="102.0" style="-fx-background-color: white;" text="CONFIMAR">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>
